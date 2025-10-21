@@ -1,0 +1,194 @@
+/* Corpo normal do site */
+
+body {
+    background-image: url('images/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem de fundo desfocada */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fundo.png');
+    background-size: cover;
+    background-position: initial;
+    filter: blur(5px);
+    z-index: -1;
+    transform: scale(1.01);
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff789;
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    font-family: afontebonita;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1px 0;
+}
+
+/* Imagem no cabeçalho */
+header img {
+    position: absolute;
+    top: 27%;
+    left: 70px;
+    width: 60px;
+    height: auto;
+    transform: rotate(-10deg);
+    margin: auto 0;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Links de navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.formatado {
+    color: #ff8401;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Seções do site */
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 20px 25%;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0px;
+    user-select: none;
+}
+
+#contacto {
+    position: relative;
+}
+
+#contacto p {
+    text-align: left;
+    padding-left: 10%;
+    position: relative;
+}
+
+#contacto img {
+    position: absolute;
+    right: 14%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: auto;
+}
+
+/* Catálogo de produtos */
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Produto individual */
+.produto {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+.produto img {
+    width: 35%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    color: #ff8401;
+    margin: 10px 0 5px;
+    user-select: none;
+}
+
+.produto p {
+    color: #333;
+}
+
+/* Botão de comprar */
+.comprar {
+    background-color: #ff8401;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.comprar:hover {
+    background-color: #ff9c00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16.5px;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+/* Carregar a fonte do header */
+@font-face {
+    font-family: 'afontebonita';
+    src: url(fonts/Rockstar-ExtraBold.otf) format('opentype');
+}
