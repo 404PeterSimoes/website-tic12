@@ -1,5 +1,10 @@
-/* Corpo normal do site */
+/* Carregar a fonte do header */
+@font-face {
+    font-family: 'afontebonita';
+    src: url(fonts/Rockstar-ExtraBold.otf) format('opentype');
+}
 
+/* Corpo normal do site */
 body {
     background-image: url('images/fundo.png');
     background-size: cover;
@@ -182,10 +187,6 @@ footer {
     text-align: center;
     padding: 5px 0;
     font-size: 16.5px;
-    /*
-    position:fixed;
-    bottom: 0;
-    width: 100vw*/
 }
 
 footer p:hover {
@@ -196,8 +197,33 @@ footer p:hover {
     flex-grow: 1;
 }
 
-/* Carregar a fonte do header */
-@font-face {
-    font-family: 'afontebonita';
-    src: url(fonts/Rockstar-ExtraBold.otf) format('opentype');
+.galeria {
+    display: grid;
+    grid-template-areas: 
+    'item1 item2'
+    'item1 item3'
+}
+
+.galeria .item1 {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+} 
+
+.galeria .item2 {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+} 
+.galeria .item3 {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
 }
