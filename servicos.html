@@ -12,13 +12,13 @@
 
     <body>
         <header>
-            <img src="images/raio.png" />
+            <a href="index.html"> <img src="images/raio.png" /></a>
             <h1>Lightning<br />BOLT</h1>
         </header>
 
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a class="active" href="servicos.html">Serviços</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -26,35 +26,63 @@
         </nav>
         <div class="conteudo">
             <section id="servicos">
-                <h2>Serviços Prestados</h2>
+                <h2 class="titulo">Serviços Prestados</h2>
                 <div class="servico">
-                    <div style="width: 50%; height: 100px; float: left; background-color: green;"></div>
-                    <div style="margin-left: 50%; height: 100px; background-color: blue;"></div>
+                    <div class="servico-texto">
+                        <h2>Instalação profissional</h2>
+                    </div>
+                    <div class="servico-imagem">
+                        <img src="images/servicos/tecnicoinstalar.webp" />
+                    </div>
                 </div>
                 <div class="servico">
-                    <div style="width: 50%; height: 100px; float: left; background-color: rgb(128, 0, 0);"></div>
-                    <div style="margin-left: 50%; height: 100px; background-color: rgb(0, 255, 179);"></div>
+                    <div class="servico-quatro-imagens">
+                        <div class="item-img">
+                            <img src="images/servicos/aluguer/1.jpg" />
+                        </div>
+                        <div class="item-img">
+                            <img src="images/servicos/aluguer/2.jpg" />
+                        </div>
+                        <div class="item-img">
+                            <img src="images/servicos/aluguer/3.jpg" />
+                        </div>
+                        <div class="item-img">
+                            <img src="images/servicos/aluguer/4.jpg" />
+                        </div>
+                    </div>
+                    <div class="servico-texto">
+                        <h2>Aluguer de equipamentos</h2>
+                    </div>
                 </div>
                 <div class="servico">
-                    <div style="width: 50%; height: 100px; float: left; background-color: rgb(255, 234, 0);"></div>
-                    <div style="margin-left: 50%; height: 100px; background-color: rgb(255, 0, 247);"></div>
+                    <div class="servico-texto">
+                        <h2>Design de iluminação</h2>
+                    </div>
+                    <div class="servico-imagem">
+                        <img src="images/servicos/designiluminacao.jpg" />
+                    </div>
                 </div>
-                <div class="ultimoservico">
-                    <div style="width: 50%; height: 100px; float: left; background-color: rgb(255, 220, 201);"></div>
-                    <div style="margin-left: 50%; height: 100px; background-color: rgb(25, 94, 0);"></div>
+                <div class="servico">
+                    <div class="servico-duas-imagens">
+                        <img src="images/servicos/concertos/1.webp" />
+                        <img src="images/servicos/concertos/2.jpg" />
+                    </div>
+                    <div class="servico-texto">
+                        <h2 style="padding-top: 25%; padding-bottom: 25%">
+                            Iluminação para concertos e espetáculos
+                        </h2>
+                    </div>
                 </div>
+
+                <p style="text-align: center; width: 100%; margin-top: 30px;">
+                    Gostou das nossas propostas?<br />
+                    <a href="contacto.html" class="texto-contacte-nos">Contacte-nos!</a>
+                </p>
             </section>
         </div>
 
         <footer>
             <p>&copy; 2025 LightningBOLT - Pedro Simões</p>
         </footer>
-
-        <!-- Script para o botão de compra -->
-        <script>
-            function comprar() {
-                alert('Compra efetuada com sucesso!');
-            }
-        </script>
     </body>
 </html>

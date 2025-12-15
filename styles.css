@@ -108,7 +108,8 @@ section {
     text-align: center;
 }
 
-h2 {
+h2.titulo,
+h1.titulo {
     margin-top: 0px;
     user-select: none;
 }
@@ -140,7 +141,9 @@ h2 {
     margin-top: 1px;
 }
 
-.produto, .servico, .ultimoservico {
+.produto,
+.servico,
+.ultimoservico {
     background-color: white;
     border-radius: 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -214,7 +217,7 @@ footer p:hover {
     display: block; /* remove espaços brancos */
     transition: ease 100ms;
     filter: drop-shadow(10px 10px 20px #00000065);
-}   
+}
 
 .imagem1 {
     grid-area: item1;
@@ -232,4 +235,69 @@ footer p:hover {
 
 .servico {
     margin-bottom: 20px;
+    display: flex;
+    padding: 0;
+}
+
+.servico img {
+    width: 100%;
+    height: 100%;
+}
+
+.servico-texto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.servico-imagem {
+    width: 50%;
+}
+
+.servico-quatro-imagens {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    row-gap: 1px;
+}
+
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico-quatro-imagens img {
+    width: 60.5%;
+}
+
+.servico-duas-imagens {
+    display: flex;
+    width: 50%;
+    /*grid-template-columns: 1fr 1fr;*/
+}
+
+.servico-duas-imagens img {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+}
+
+.texto-contacte-nos {
+    color: #e57600;
+    text-decoration: none;
+}
+
+.texto-contacte-nos:active {
+    color: #ff9625;
+    filter: drop-shadow(0px 0px 2px white); 
+}
+
+.texto-contacte-nos:hover {
+    color: #ff9625;
+    filter: drop-shadow(0px 0px 2px white); 
 }
